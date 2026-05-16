@@ -9,8 +9,14 @@
       "includeFiles": "dist/server/**"
     }
   },
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api/ssr" }
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/ssr"
+    }
   ],
   "headers": [
     {
