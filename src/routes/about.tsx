@@ -4,14 +4,6 @@ import { profile } from "@/data/profile";
 import { timeline } from "@/data/experience";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About — Sohan Pal" },
-      { name: "description", content: `About ${profile.name}, a ${profile.role} based in ${profile.location}.` },
-      { property: "og:title", content: "About — Sohan Pal" },
-      { property: "og:description", content: profile.bio },
-    ],
-  }),
   component: About,
 });
 

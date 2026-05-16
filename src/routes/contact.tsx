@@ -7,14 +7,6 @@ import { profile } from "@/data/profile";
 import { socials } from "@/data/socials";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — Sohan Pal" },
-      { name: "description", content: `Get in touch with ${profile.name} for collaborations, internships, or freelance briefs.` },
-      { property: "og:title", content: "Contact — Sohan Pal" },
-      { property: "og:description", content: "Open for select projects and conversations." },
-    ],
-  }),
   component: Contact,
 });
 

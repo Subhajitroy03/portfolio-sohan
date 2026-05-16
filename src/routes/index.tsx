@@ -10,12 +10,6 @@ import { Magnetic } from "@/components/magnetic";
 import { MouseSpot } from "@/components/mouse-spot";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Sohan Pal — UX Designer" },
-      { name: "description", content: "Selected work from a UX Designer exploring product, motion and identity." },
-    ],
-  }),
   component: Index,
 });
 

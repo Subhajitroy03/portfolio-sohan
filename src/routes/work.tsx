@@ -4,14 +4,6 @@ import { projects } from "@/data/projects";
 import { ProjectCard } from "@/components/project-card";
 
 export const Route = createFileRoute("/work")({
-  head: () => ({
-    meta: [
-      { title: "Work — Sohan Pal" },
-      { name: "description", content: "All projects: product design, branding, motion and concepts." },
-      { property: "og:title", content: "Work — Sohan Pal" },
-      { property: "og:description", content: "Selected case studies in product design, branding and motion." },
-    ],
-  }),
   component: Work,
 });
 

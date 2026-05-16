@@ -3,19 +3,14 @@
   "framework": null,
   "installCommand": "npm install",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist/client",
-  "functions": {
-    "api/ssr.js": {
-      "includeFiles": "dist/server/**"
-    }
-  },
+  "outputDirectory": "dist",
   "routes": [
     {
       "handle": "filesystem"
     },
     {
       "src": "/(.*)",
-      "dest": "/api/ssr"
+      "dest": "/index.html"
     }
   ],
   "headers": [
