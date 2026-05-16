@@ -1,4 +1,4 @@
-@import "tailwindcss" source(none);
+@import "tailwindcss";
 @source "../src";
 @import "tw-animate-css";
 
@@ -162,4 +162,12 @@
     animation: grain 8s steps(10) infinite;
   }
   .no-cursor, .no-cursor * { cursor: none; }
+}
+
+/* Hide Lovable badge */
+div[id^="lovable"],
+#lovable-badge-wrap,
+#lovable-badge,
+.lovable-badge {
+  display: none !important;
 }
