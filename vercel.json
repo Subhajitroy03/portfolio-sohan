@@ -3,13 +3,13 @@
   "framework": null,
   "installCommand": "npm install",
   "buildCommand": "npm run build",
+  "outputDirectory": "dist/client",
   "functions": {
     "api/ssr.js": {
       "includeFiles": "dist/server/**"
     }
   },
   "rewrites": [
-    { "source": "/assets/(.*)", "destination": "/dist/client/assets/$1" },
     { "source": "/(.*)", "destination": "/api/ssr" }
   ],
   "headers": [
